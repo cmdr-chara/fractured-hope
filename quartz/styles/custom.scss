@@ -1,3 +1,366 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// ============================================================
+// FRACTURED HOPE WIKI — Soul Fracture Theme
+// Crimson on near-black. Determination and HATE.
+// ============================================================
+
+// ========================
+// BLOCKQUOTES
+// ========================
+blockquote:not(.callout) {
+  border-left: 3px solid var(--secondary);
+  background: color-mix(in srgb, var(--secondary) 6%, var(--light));
+  padding: 0.75rem 1.1rem;
+  border-radius: 0 6px 6px 0;
+  margin: 1.25rem 0;
+  font-style: italic;
+  color: var(--gray);
+}
+
+// ========================
+// HEADINGS
+// ========================
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.02em;
+}
+
+article h2 {
+  border-bottom: 1px solid var(--lightgray);
+  padding-bottom: 0.3rem;
+  margin-top: 1.8rem;
+}
+
+// ========================
+// INTERNAL LINKS
+// ========================
+a.internal {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  background-image: linear-gradient(
+    color-mix(in srgb, var(--secondary) 40%, transparent),
+    color-mix(in srgb, var(--secondary) 40%, transparent)
+  );
+  background-position: 0 100%;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s ease,
+    background-image 0.2s ease,
+    color 0.2s ease,
+    text-shadow 0.2s ease;
+
+  &:hover {
+    color: var(--tertiary);
+    background-color: transparent;
+    background-image: linear-gradient(var(--secondary), var(--secondary));
+    background-size: 100% 2px;
+    text-shadow: 0 0 8px color-mix(in srgb, var(--tertiary) 40%, transparent);
+  }
+}
+
+// ========================
+// TAG PILLS
+// ========================
+a.tag-link {
+  background: color-mix(in srgb, var(--secondary) 10%, var(--light));
+  border: 1px solid color-mix(in srgb, var(--secondary) 25%, transparent);
+  color: var(--secondary);
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.15rem 0.5rem;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.2s ease,
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px color-mix(in srgb, var(--secondary) 25%, transparent);
+    background: color-mix(in srgb, var(--secondary) 18%, var(--light));
+    border-color: color-mix(in srgb, var(--secondary) 60%, transparent);
+    color: var(--dark);
+    text-decoration: none;
+  }
+}
+
+// ========================
+// EXPLORER / SIDEBAR
+// ========================
+.explorer .folder-container .folder-title {
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+}
+
+.explorer ul.content > li > a {
+  // var(--gray) is #5a3535 in dark mode — too dark to read.
+  // Use body text color instead so items are clearly visible.
+  color: var(--darkgray);
+
+  &:hover {
+    color: var(--secondary);
+  }
+}
+
+// ========================
+// CONTENT META (date below title)
+// ========================
+p.content-meta {
+  font-size: 0.82rem;
+}
+
+// ========================
+// SITE TITLE
+// ========================
+p.page-title a,
+h1.page-title a {
+  text-decoration: none;
+
+  &:hover {
+    color: var(--secondary);
+  }
+}
+
+// ========================
+// SECTION HEADERS (backlinks, recent notes, graph)
+// ========================
+.backlinks > h3,
+.recent-notes > h3,
+.graph > h3 {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--secondary) 70%, var(--dark));
+}
+
+// ========================
+// DUPLICATE TITLE FIX
+// ========================
+// The article-title plugin renders the page title before the content body.
+// Markdown pages that start with # Title create a visible duplicate h1.
+// Quartz wraps article content in .popover-hint — hide the first markdown h1.
+.popover-hint > h1:first-child {
+  display: none;
+}
+
+// ========================
+// FOOTER
+// ========================
+footer {
+  font-size: 0.82rem;
+
+  a {
+    color: var(--secondary);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// ========================
+// TABLES
+// ========================
+// Removed duplicate table styles favoring ENHANCED TABLES below
+
+// ========================
+// GRAPH BACKGROUND FIX
+// quartz.ts graphCss injects var(--dark) as the graph-outer background.
+// In dark mode, var(--dark) = #f0e8e8 (near-white heading color), making
+// the graph a bright white box on an otherwise dark page.
+// Override to var(--light) = #100c0c so it matches the page background.
+// ========================
+.graph.story-wiki-graph > .graph-outer {
+  background:
+    radial-gradient(
+      circle at center,
+      color-mix(in srgb, var(--secondary) 8%, transparent) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      color-mix(in srgb, var(--tertiary) 10%, transparent) 0%,
+      transparent 50%
+    ),
+    var(--light) !important;
+}
+
+.graph.story-wiki-graph > .global-graph-outer {
+  background: color-mix(in srgb, var(--light) 60%, transparent) !important;
+}
+
+.graph.story-wiki-graph > .global-graph-outer > .global-graph-container {
+  background:
+    radial-gradient(
+      circle at center,
+      color-mix(in srgb, var(--tertiary) 8%, transparent) 0%,
+      transparent 60%
+    ),
+    var(--light) !important;
+}
+
+// ========================
+// REFINED TAG PILLS
+// ========================
+a.internal.tag {
+  background: color-mix(in srgb, var(--secondary) 15%, var(--light));
+  color: var(--tertiary);
+  border: 1px solid color-mix(in srgb, var(--secondary) 30%, transparent);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.2s ease,
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px color-mix(in srgb, var(--secondary) 25%, transparent);
+    background: color-mix(in srgb, var(--secondary) 25%, var(--light));
+    border-color: color-mix(in srgb, var(--tertiary) 60%, transparent);
+    color: var(--dark);
+    text-decoration: none;
+  }
+}
+
+// ========================
+// ENHANCED LISTS (BREATHING ROOM)
+// ========================
+article ul > li,
+article ol > li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+article ul > li > ul,
+article ol > li > ol {
+  margin-top: 0.4rem;
+}
+
+// ========================
+// ENHANCED TABLES
+// ========================
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 1.5rem 0;
+  border: 1px solid color-mix(in srgb, var(--lightgray) 40%, transparent);
+  border-radius: 8px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--lightgray) 10%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+table th {
+  background: color-mix(in srgb, var(--secondary) 10%, var(--light));
+  border-bottom: 2px solid color-mix(in srgb, var(--lightgray) 50%, transparent);
+  color: var(--dark);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+table tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--lightgray) 5%, transparent);
+}
+
+table td {
+  border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 30%, transparent);
+  padding: 0.6rem 1rem;
+  transition: background 0.15s ease;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table tr:hover td {
+  background: color-mix(in srgb, var(--secondary) 8%, var(--light));
+}
+
+// ========================
+// HIDE TABLE SCROLLBAR
+// ========================
+.table-container {
+  overflow-x: hidden !important;
+  scrollbar-width: none; // Firefox
+  -ms-overflow-style: none; // IE and Edge
+}
+.table-container::-webkit-scrollbar {
+  display: none; // Chrome, Safari and Opera
+}
+
+// ========================
+// UNDERTALE FONT (DETERMINATION)
+// ========================
+@font-face {
+  font-family: "Determination";
+  src: url("../../static/determination.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Apply Undertale font to the site title
+.page-title {
+  font-family: "Determination", sans-serif !important;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+h1.page-title,
+h1.page-title a,
+p.page-title,
+p.page-title a {
+  font-family: "Determination", sans-serif !important;
+  font-size: 2rem !important;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+  text-shadow: 0 0 12px color-mix(in srgb, var(--secondary) 60%, transparent);
+  transition:
+    text-shadow 0.2s ease,
+    color 0.2s ease;
+
+  &:hover {
+    text-shadow: 0 0 20px color-mix(in srgb, var(--tertiary) 80%, transparent);
+  }
+}
+
+// ========================
+// GLASSMORPHIC PANELS (Graph & T.O.C)
+// ========================
+.graph.story-wiki-graph > .graph-outer,
+.toc {
+  background: color-mix(in srgb, var(--lightgray) 5%, transparent) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid color-mix(in srgb, var(--secondary) 12%, transparent);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.graph.story-wiki-graph > .global-graph-outer {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+// Backlinks layout is owned by the backlinks plugin styles.

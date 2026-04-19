@@ -1,3 +1,11 @@
 public
 node_modules
 .quartz-cache
+.superpowers
+docs/superpowers/plans/2026-03-30-heart-graph-layout.md
+fix_graph_*.cjs
+fix_heart_*.cjs
+fix_inner_*.cjs
+make_heart_perfect.cjs
+update_heart.cjs
+update_zoom.cjs
