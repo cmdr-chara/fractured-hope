@@ -1,7 +1,17 @@
 ---
 title: "Alternate Timelines"
 description: "The confirmed alternate-timeline material in Fractured Hope, including Timeline 284, Timeline 847, HChara, Crystalline Chara, Chara's retained memory, and the way Arc 2 permanently closes future loop options."
-tags: [timeline, alternate-timelines, hchara, crystalline-chara, chara, determination, timeline-284, timeline-847]
+tags:
+  [
+    timeline,
+    alternate-timelines,
+    hchara,
+    crystalline-chara,
+    chara,
+    determination,
+    timeline-284,
+    timeline-847,
+  ]
 aliases: ["alternate timelines", "timeline 284", "timeline 847", "divergent routes"]
 ---
 

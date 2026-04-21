@@ -1,7 +1,22 @@
 ---
 title: "Arc 5: The Birthday Betrayal"
 description: "The fifth arc of Fractured Hope. A surprise party becomes a site of violence. HChara arrives deployed by Kager. Javier is killed. Frisk is killed. Kager makes his worldview explicit. Paloma transforms. Crystalline Chara appears as the Timeline 847 temptation. Raiden's final message is delivered."
-tags: [story, arc, arc-5, chara, hchara, crystalline-chara, timeline-847, kager, javier, paloma, frisk, eclipse, birthday]
+tags:
+  [
+    story,
+    arc,
+    arc-5,
+    chara,
+    hchara,
+    crystalline-chara,
+    timeline-847,
+    kager,
+    javier,
+    paloma,
+    frisk,
+    eclipse,
+    birthday,
+  ]
 aliases: ["Arc 5", "The Birthday Betrayal", "story/arc-5-the-birthday-betrayal"]
 ---
 
