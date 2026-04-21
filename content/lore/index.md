@@ -1,54 +1,21 @@
 ---
 title: Lore
-description: Core terminology and metaphysics for Fractured Hope.
+description: Core terminology and metaphysics grouped into clearer folders.
 tags: [meta, section, lore]
 aliases: [Lore Index]
 ---
 
 # Lore
 
-Core concepts, soul mechanics, and setting-level terminology.
+Core concepts, soul mechanics, artifacts, and history now live in subfolders.
 
-## Souls and Identity
+## Groups
 
-- [[Souls]]
-- [[Lumina]]
-- [[Determination]]
-- [[Soul Fusion]]
-- [[Soul Tether]]
-- [[Memory Fragmentation]]
-- [[Blackened Determination]]
-
-## Timeline and Metaphysics
-
-- [[Jikle]]
-- [[Resets and Save Points]]
-- [[Artificial Soul Matrices]]
-- [[Bond-Powered Transformation]]
-- [[Creation Magic]]
-
-## Combat and Weapons
-
-- [[Lunar Aegis]]
-- [[Penumbra]]
-- [[Eclipse and Lunar Entropy]]
-- [[Frequency Jamming]]
-- [[Paladin Blades]]
-- [[Pendant and Red Knife]]
-
-## Records, Artifacts, and Documents
-
-- [[Raiden's Locket]]
-- [[Raiden's Soul-Stabilization Notes]]
-- [[Model 500 Blueprint]]
-- [[Lily Note]]
-- [[Manifested Notes]]
-- [[Magical Cigarettes]]
-
-## Institutions and Catastrophes
-
-- [[Lab C7]]
-- [[The Red Genocide]]
+- [[lore/concepts/index|Concepts]]
+- [[lore/mechanics/index|Mechanics]]
+- [[lore/artifacts/index|Artifacts]]
+- [[lore/history/index|History]]
+- [[equipment/index|Equipment]]
 
 ## Notes
 

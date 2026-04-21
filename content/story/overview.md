@@ -17,11 +17,11 @@ The story opens in Brasilia, nine years into an unnamed war between humans and m
 
 During a ceasefire event, the venue is attacked. The assault is not random: Raiden's [[Lumina]] is deliberately fragmented and his pieces are scattered across realities. Everyone who knew him begins losing their memories of him at a rate proportional to how deeply they were connected. For Chara, the loss is near-total.
 
-Before the attack, Raiden had hidden a failsafe: a device beneath a fixed-point building with a partial holographic message, and a note tucked under a flower. He had designed the soul fusion plan, written the research establishing that Chara's [[Determination]] is the only vessel that could survive carrying all seven soul types simultaneously, and prepared soul-stabilization notes with precise emotional and physical anchoring data. His final recorded line: _"choose pain, choose failure, choose people."_
+Before the attack, Raiden had hidden a failsafe: a device beneath a fixed-point building with a partial holographic message, and a note tucked under a flower. He had designed the soul fusion plan, written the research establishing that Chara's [[Determination]] is the only vessel that could survive carrying seven additional soul traits simultaneously, and prepared soul-stabilization notes with precise emotional and physical anchoring data. His final recorded line: _"choose pain, choose failure, choose people."_
 
 ---
 
-## Arc 1: The Shape of What's Left
+## Arc 1: A New Dawn
 
 Chara leads Liberado through the aftermath of the attack, operating under escalating grief and a war that has not paused. The arc establishes the group dynamics, the political terrain of a nine-year conflict, and Chara's particular position inside it — commander, symbol, and person.
 
@@ -33,7 +33,7 @@ Key events:
 
 ---
 
-## Arc 2: The Fusion
+## Arc 2: Building Alliances
 
 Axel administers the soul fusion procedure across several sessions. The process is invasive and identity-threatening: each additional soul type grafts onto Chara's Determination as a distinct presence, fighting for expression. The traits gained are Justice, Patience, Bravery, Perseverance, Integrity, and Kindness — drawn from souls belonging to people who died in the war.
 
@@ -43,7 +43,7 @@ After the fusion, Chara tests Justice in combat. She loses a memory of Raiden. T
 
 ---
 
-## Arc 3: The Concert and the Choice
+## Arc 3: Calculated Mercy
 
 [[Javier]] — an agent of Kager's, with void-pit eyes and chains on his belt — is tracked to a public concert in Brasilia. During the confrontation, Javier admits his role in Raiden's Lumina fragmentation: _"I lent a hand. As did someone else you know."_ He does not name the second person.
 
@@ -53,7 +53,7 @@ That choice matters later. [[Kager]] kills Javier precisely because Chara showed
 
 ---
 
-## Arc 4: Houses and Confessions
+## Arc 4: The Weight of Promises
 
 The arc shifts register. Chara builds a house. The double bed has a second half she does not use; she built it for someone she was imagining rather than expecting. The house becomes the gathering point for the full group.
 
@@ -67,13 +67,15 @@ Arc 4.6, _Raiden's First Embrace_, confirms the emotional architecture of the en
 
 ---
 
-## Arc 5: What Kager Does
+## Arc 5: The Birthday Betrayal
 
 [[HChara]] — an alternate Chara from Timeline 284 — arrives, deployed by Kager. In her timeline, the world was already dead when she escaped Lab C7. She killed everyone remaining, including Raiden, and Kager offered her a perfect world. She has void-mirror eyes and bleeds differently from each side of her face: water tears from the left, dark blood from the right.
 
 HChara and Chara fight to a standstill. HChara eventually begs Chara to finish her. Her stated reason is simple and awful: she wants to see Raiden one more time. Chara does not kill her.
 
 Kager kills Javier in Arc 5.3 — brutal, deliberate, and demonstrative. [[Paloma]] escapes.
+
+After Javier's death, Kager kills HChara as well, severing her head and shattering both her soul and Lumina. Her personal death is confirmed; the long-term fate of her shattered Lumina remains unresolved.
 
 Arc 5.4 makes Kager's worldview explicit. He believes love is a flaw unless it can be weaponized. He treats connection as weakness to be catalogued and used. This is also the arc in which Paloma's bond-powered transformation is confirmed in full: her power scales with emotional bonds, and every time she uses it she is trading years of her life for raw force. Her transformation in this sequence is driven by grief over Javier.
 
@@ -83,7 +85,7 @@ Frisk is killed by Kager in order to weaken Chara. She does not disappear: she r
 
 ---
 
-## Arc 6: The Last Fight
+## Arc 6: The Hollow Morning
 
 [[Sans]] delivers the new revolver — built by Paloma — in Arc 6.2. He hugs Chara before she goes. He has been holding Raiden's instruction for eight years: _"Don't interfere unless she's about to bring the whole damn house down."_ Eight years of watching, and not interfering.
 
@@ -122,7 +124,7 @@ She also found Raiden's book — the research that would eventually become the s
 - The sender of the lily note. The manifest behavior is confirmed; the sender is not conclusively identified.
 - The exact relationship between "the laboratory" and Lab C7 — related and guilt-linked in the confessional material, but not structurally mapped.
 - Raiden's name in the closing Arc 6 sequence. He is referenced but not resolved.
-- The post-Arc 5 fate of HChara.
+- The long-term fate of HChara's shattered Lumina after Arc 5.
 - Full Lumina fragment recovery — whether the mechanism works or succeeds is still unresolved.
 - Chara's age readout conflict in the manuscript source material.
 

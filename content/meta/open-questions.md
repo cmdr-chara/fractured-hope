@@ -1,4 +1,4 @@
----
+﻿---
 title: "Open Questions"
 description: "A tracked list of confirmed unresolved points in Fractured Hope — canon questions that remain genuinely open after full source review, with pointers to the pages that carry each question."
 tags: [meta, open-questions, unresolved, canon-policy]
@@ -93,7 +93,7 @@ The exact properties and narrative function of the magical cigarettes beyond the
 
 **Pendant-to-red-knife transformation trigger**
 The specific trigger and conditions for the pendant's transformation into the red knife are not detailed in reviewed sources.
-→ See [[lore/pendant-and-red-knife|Pendant and Red Knife]]
+→ See [[equipment/pendant-and-red-knife|Pendant and Red Knife]]
 
 ---
 

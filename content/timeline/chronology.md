@@ -18,16 +18,17 @@ For reset and timeline-loop mechanics, see [[timeline/reset-sequence|Reset Seque
 The events before Arc 1 are recovered from flashback and confession material. Sequence within this period is partially inferred.
 
 - **The war begins.** Approximately nine years before the story's opening, conflict between humans and monsters ignites. Brasilia becomes a contested zone.
-- **Chara is imprisoned.** At sixteen, Chara is abducted — the dart is confirmed as Perseverance-laced — and held in [[locations/the-library|the Library]]'s white-room containment. Classification: **THE RED GENOCIDE** (C-1). Jammer-based confinement prevents [[lore/memory-fragmentation|Determination-backed memory functions]].
+- **Chara is taken to Lab C7.** At sixteen, Chara is abducted — the dart is confirmed as Perseverance-laced — and held in [[lore/lab-c7|Lab C7]] for six months. Integrity cord restraints, repeated shocks, and Perseverance-thread damage define this period.
+- **Chara escapes Lab C7 and is moved to the Library.** After the Lab C7 escape, she is taken to [[locations/the-library|the Library]]'s white-room containment under **THE RED GENOCIDE** / C-1 classification. Jammer-based confinement prevents [[lore/memory-fragmentation|Determination-backed memory functions]].
 - **Raiden encounters Chara.** The first embrace occurs on the beach — the moment the manuscript identifies as Raiden seeing Chara as a person rather than a threat. Exact timing within the pre-story period is not confirmed.
-- **Lab C7 experiments.** Frisk confirms she observed Chara's treatment through a one-way mirror and recorded her screaming as data. The relationship between Library imprisonment and Lab C7 experiments is partially overlapping but not fully mapped.
+- **Frisk's observation is confirmed.** Frisk confirms she observed Chara's treatment through a one-way mirror and recorded her screaming as data. The exact relationship between the unnamed "laboratory" referenced in some guilt material and the mapped Lab C7 / Library sequence remains partially unresolved.
 - **Liberado is founded.** Chara and Raiden establish Liberado in Brasilia as a resistance/aid organization.
 - **Raiden's Lumina fragmentation.** In the Prologue, a ceasefire event is attacked. Raiden's Lumina is fragmented; the second actor in this fragmentation is not conclusively identified in reviewed sources.
 - **Raiden dies.** Raiden is killed. The exact circumstances of his death are addressed in Arc material but the precise sequence relative to the Prologue attack is not detailed in the current reviewed sources.
 
 > **Unresolved:** The relative order of Raiden's Lumina fragmentation and his death is not confirmed with precision. Multiple flashback sequences address this period non-linearly.
 
-> **Unresolved:** Whether the Library imprisonment and Lab C7 experiments are concurrent, sequential, or partially overlapping is not fully resolved.
+> **Unresolved:** Lab C7 precedes the Library in the current wiki sequence, but the exact relationship between the unnamed "laboratory" referenced in some guilt material and the mapped Lab C7 / Library sequence is not fully resolved.
 
 ---
 

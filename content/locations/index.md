@@ -1,25 +1,19 @@
 ---
 title: Locations
-description: Place pages and setting anchors for Fractured Hope.
+description: Places in Fractured Hope grouped by environment.
 tags: [meta, section, locations]
 aliases: [Location Index]
 ---
 
 # Locations
 
-Place pages for the recurring and structurally significant settings in Fractured Hope.
+This section holds the places the story keeps returning to, grouped so the sidebar has a clear hierarchy.
 
-## Available pages
+## Groups
 
-- [[Brasilia]]
-- [[The Hidden Lab]]
-- [[Chara's House]]
-- [[The Beach]]
-- [[Judgment Hall]]
-- [[The Library]]
-- [[Asriel's Prison]]
-- [[City Underbelly]]
+- [[locations/city/index|City Spaces]]
+- [[locations/containment/index|Containment Sites]]
 
 ## Notes
 
-Battle-specific alleys, rooftops, basements, and sewers without a stable recurring identity stay inside the arc pages rather than getting their own entries.
+Locations are grouped by how the story uses them rather than by strict geography.

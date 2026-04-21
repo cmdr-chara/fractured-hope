@@ -1,33 +1,20 @@
 ---
 title: Characters
-description: Character pages for the central cast of Fractured Hope.
+description: Character pages grouped by role in Fractured Hope.
 tags: [meta, section, characters]
 aliases: [Character Index]
 ---
 
 # Characters
 
-The story's main cast and recurring figures.
+The story's cast is grouped by narrative role so the explorer has a clear hierarchy.
 
-## Available pages
+## Cast groups
 
-- [[Chara]]
-- [[Raiden]]
-- [[Frisk]]
-- [[Kager]]
-- [[Axel]]
-- [[Sans]]
-- [[Elias the Administrator]]
-- [[HChara]]
-- [[Valerius]]
-- [[Javier]]
-- [[Paloma]]
-- [[Asriel]]
-- [[Asgore]]
-- [[Marcus]]
-- [[Martinez]]
-- [[Ale]]
+- [[characters/central/index|Central Cast]]
+- [[characters/supporting/index|Supporting Cast]]
+- [[characters/antagonists/index|Antagonists]]
 
 ## Notes
 
-Characters are ordered here by narrative importance rather than alphabetically. Minor unnamed or one-scene figures are still covered inside the arc pages rather than getting their own entries.
+Minor unnamed or one-scene figures are still covered inside the arc pages rather than getting their own entries.

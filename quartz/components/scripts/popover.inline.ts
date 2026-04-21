@@ -76,6 +76,8 @@ async function mouseEnterHandler(
       const img = document.createElement("img")
       img.src = targetUrl.toString()
       img.alt = targetUrl.pathname
+      img.loading = "lazy"
+      img.decoding = "async"
 
       popoverInner.appendChild(img)
       break
@@ -84,6 +86,7 @@ async function mouseEnterHandler(
         case "pdf":
           const pdf = document.createElement("iframe")
           pdf.src = targetUrl.toString()
+          pdf.title = `Preview of ${targetUrl.pathname}`
           popoverInner.appendChild(pdf)
           break
         default:

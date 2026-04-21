@@ -6,12 +6,23 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
   text-size-adjust: none;
   overflow-x: hidden;
   width: 100vw;
 
   @media all and ($mobile) {
     scroll-padding-top: 4rem;
+  }
+}
+
+:root[saved-theme="dark"] {
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
@@ -127,6 +138,12 @@ a {
       fill: var(--dark);
     }
   }
+}
+
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--tertiary);
+  outline-offset: 0.18rem;
+  border-radius: 4px;
 }
 
 .flex-component {

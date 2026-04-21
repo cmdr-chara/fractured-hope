@@ -9,8 +9,8 @@ const graph = Component.DesktopOnly(
   Plugin.Graph({
     localGraph: {
       showTags: false,
-      depth: 1,
-      enableRadial: false,
+      depth: -1,
+      enableRadial: true,
     },
     globalGraph: {
       showTags: false,

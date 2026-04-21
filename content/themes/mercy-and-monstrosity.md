@@ -41,7 +41,7 @@ Chara does not kill her.
 
 This is mercy at its most uncomfortable because HChara is not redeemable in any conventional sense and is asking, explicitly, for death. Chara's refusal is not an easy call. It is a refusal to become the kind of person who grants death on request even when the request is sincere.
 
-What happens to HChara afterward is unresolved in the reviewed material.
+Chara's refusal does not save HChara from Kager. Arc 5 later confirms that Kager kills her and shatters both her soul and Lumina. What remains unresolved is not whether HChara survives as a person, but what, if anything, can become of her shattered Lumina afterward.
 
 ## The Arc 6 Problem
 

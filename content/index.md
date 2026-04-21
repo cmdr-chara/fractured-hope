@@ -9,70 +9,112 @@ aliases: [home, Home, start here, Fractured Hope Wiki]
 
 _Brasilia, nine years into a war nobody won._
 
-This wiki covers the original fiction project **Fractured Hope** — a dark, multiversal war-tragedy that follows [[Chara]] Dreemurr, a 25-year-old commander of the resistance group [[Liberado]], from the night her world breaks to whatever comes after.
-
-The story runs across six arcs. It involves soul mechanics and fusion, [[Lumina]] fragmentation, timeline collapse, a main villain who treats love as a catalogueable flaw, and a cast that earns its damage honestly. The closing confrontation resolves with Chara alive, [[Elias the Administrator]] bound by a HATE and Determination tether, and nothing cleanly won.
-
-This is not a crossover fan-work framed through a recognizable IP. The names and baseline lore come from Undertale, but the story is its own thing. A reader who has never played the game can follow it without issue.
+<section class="home-brief" aria-label="Story brief">
+  <p><strong>Fractured Hope</strong> is a dark multiversal war-tragedy about Chara Dreemurr, Liberado, soul fusion, Lumina damage, and the cost of refusing a perfect world built on control.</p>
+  <dl>
+    <div>
+      <dt>Scope</dt>
+      <dd>Six arcs from Brasilia to the closing confrontation.</dd>
+    </div>
+    <div>
+      <dt>Core</dt>
+      <dd>Love, memory, identity, and weaponized perfection.</dd>
+    </div>
+    <div>
+      <dt>Canon</dt>
+      <dd>Undertale names remain; the story reads as its own thing.</dd>
+    </div>
+  </dl>
+</section>
 
 ---
 
 ## Where to start
 
-| If you want...                        | Go to                       |
-| ------------------------------------- | --------------------------- |
-| The full story summary                | [[Story Overview]]          |
-| Chara's arc specifically              | [[Chara]]                   |
-| How souls and soul fusion work        | [[Souls]]                   |
-| What Lumina is and why it matters     | [[Lumina]]                  |
-| The main villain                      | [[Kager]]                   |
-| The Arc 6 antagonist                  | [[Elias the Administrator]] |
-| How this wiki handles uncertain canon | [[Canon Policy]]            |
-| What source files were used           | [[Source Map]]              |
-| Which story threads remain unresolved | [[Open Questions]]          |
+<nav class="home-entry-grid" aria-label="Primary wiki routes">
+  <a class="home-entry home-entry-primary" href="/story/overview">
+    <span class="home-entry-label">Story</span>
+    <strong>Read the full arc guide</strong>
+    <span>Six arcs, from Brasilia to the closing confrontation.</span>
+  </a>
+  <a class="home-entry" href="/characters/chara">
+    <span class="home-entry-label">Character</span>
+    <strong>Start with Chara</strong>
+    <span>Commander, subject file, center of gravity.</span>
+  </a>
+  <a class="home-entry" href="/lore/souls">
+    <span class="home-entry-label">Lore</span>
+    <strong>Learn the soul system</strong>
+    <span>Fusion, traits, Jikle, Determination.</span>
+  </a>
+  <a class="home-entry" href="/lore/lumina">
+    <span class="home-entry-label">Metaphysics</span>
+    <strong>Understand Lumina</strong>
+    <span>The identity layer beneath the soul.</span>
+  </a>
+  <a class="home-entry" href="/characters/kager">
+    <span class="home-entry-label">Antagonist</span>
+    <strong>Meet Kager</strong>
+    <span>Perfection through control, given a face.</span>
+  </a>
+  <a class="home-entry" href="/meta/open-questions">
+    <span class="home-entry-label">Canon</span>
+    <strong>Track open threads</strong>
+    <span>Unresolved material and source limits.</span>
+  </a>
+  <a class="home-entry" href="/meta/source-map">
+    <span class="home-entry-label">Sources</span>
+    <strong>Check the source map</strong>
+    <span>Manuscript files, notes, and handoff docs.</span>
+  </a>
+</nav>
 
 ---
 
 ## Characters
 
-- [[Chara]] — Commander of Liberado. Subject C-1. Center of gravity.
-- [[Raiden]] — Her boyfriend, researcher, architect of the soul fusion plan. Missing since the Prologue.
-- [[Frisk]] — Field medic, former handler, complicated. Killed by Kager in Arc 5, persists as soul resonance.
-- [[Kager]] — Primary antagonist. Connected to Raiden's past. Uses [[Jikle]].
-- [[Axel]] — Keeper of the hidden lab and the person who administers Chara's soul fusion.
-- [[Sans]] — Former warden, present-day guardian, and carrier of Raiden's last request.
-- [[Elias the Administrator]] — The Arc 6 system-logic antagonist. Identity confirmed: Elias. Bound by Chara at the closing confrontation.
-- [[HChara]] — Alternate Chara from Timeline 284 and one of the story's clearest warnings.
-- [[Valerius]] — Formal, duty-bound Arc 6 ally with a moon-and-sun defensive kit including [[Lunar Aegis]] and [[Penumbra]].
-- [[Javier]] — Former hostile operative whose fate proves Chara's mercy mattered.
-- [[Paloma]] — Javier's partner and the clearest bond-powered force escalation in the story.
-- [[Asriel]] — Imprisoned Dreemurr figure whose thread remains partially unopened.
-- [[Asgore]] — Political and institutional figure tied to the machinery that classified Chara.
-- [[Marcus]], [[Martinez]], [[Ale]] — Named members of the Arc 6 assault unit.
+<div class="home-roster" aria-label="Character routes">
+  <a href="/characters/chara"><strong>Chara</strong><span>Commander / Subject C-1</span></a>
+  <a href="/characters/raiden"><strong>Raiden</strong><span>Researcher / missing anchor</span></a>
+  <a href="/characters/frisk"><strong>Frisk</strong><span>Field medic / soul resonance</span></a>
+  <a href="/characters/kager"><strong>Kager</strong><span>Primary antagonist / Jikle</span></a>
+  <a href="/characters/axel"><strong>Axel</strong><span>Lab keeper / fusion operator</span></a>
+  <a href="/characters/sans"><strong>Sans</strong><span>Guardian / last request</span></a>
+  <a href="/characters/elias-the-administrator"><strong>Elias</strong><span>Arc 6 system antagonist</span></a>
+  <a href="/characters/hchara"><strong>HChara</strong><span>Timeline 284 warning</span></a>
+  <a href="/characters/valerius"><strong>Valerius</strong><span>Arc 6 ally / defensive kit</span></a>
+  <a href="/characters/javier"><strong>Javier</strong><span>Hostile operative / mercy proof</span></a>
+  <a href="/characters/paloma"><strong>Paloma</strong><span>Bond-powered escalation</span></a>
+  <a href="/characters/"><strong>All characters</strong><span>Full roster and minor figures</span></a>
+</div>
 
 ---
 
 ## Lore
 
-- [[Souls]] — The nine soul types, fusion mechanics, and Jikle.
-- [[Lumina]] — What Lumina is, why fragmenting it is worse than death, and how memory corruption works.
-- [[Determination]] — The soul type tied to reset retention, endurance, and Chara's narrowing options.
-- [[Lab C7]] — The facility that turned Chara into a subject file before the story turned her into a protagonist.
-- [[The Library]] — The white-room containment site where Chara was imprisoned with jammer-based confinement under C-1 classification.
-- [[The Red Genocide]] — The codename attached to the 99.4% extinction probability judgment.
+<div class="home-roster home-lore-grid" aria-label="Lore routes">
+  <a href="/lore/souls"><strong>Souls</strong><span>Nine types, fusion, and Jikle.</span></a>
+  <a href="/lore/lumina"><strong>Lumina</strong><span>Identity architecture and fragmentation.</span></a>
+  <a href="/lore/determination"><strong>Determination</strong><span>Reset retention, endurance, limits.</span></a>
+  <a href="/lore/lab-c7"><strong>Lab C7</strong><span>Subject file before protagonist.</span></a>
+  <a href="/story/library-containment"><strong>The Library</strong><span>White-room confinement and jammers.</span></a>
+  <a href="/lore/the-red-genocide"><strong>The Red Genocide</strong><span>The 99.4% extinction judgment.</span></a>
+</div>
 
 ---
 
 ## Browse by section
 
-- [[Story]]
-- [[Characters]]
-- [[Lore]]
-- [[Locations]]
-- [[Relationships]]
-- [[Themes]]
-- [[Timeline]]
-- [[Meta]]
+<nav class="home-section-strip" aria-label="Browse wiki sections">
+  <a href="/story/">Story</a>
+  <a href="/characters/">Characters</a>
+  <a href="/lore/">Lore</a>
+  <a href="/locations/">Locations</a>
+  <a href="/relationships/">Relationships</a>
+  <a href="/themes/">Themes</a>
+  <a href="/timeline/">Timeline</a>
+  <a href="/meta/">Meta</a>
+</nav>
 
 ---
 
