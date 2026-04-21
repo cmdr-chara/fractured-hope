@@ -9,3 +9,4 @@ fix_inner_*.cjs
 make_heart_perfect.cjs
 update_heart.cjs
 update_zoom.cjs
+plugins/graph
