@@ -25,6 +25,34 @@ const INTERNAL_EXPORTS = new Set(["manifest", "default"])
 
 const execAsync = promisify(execCb)
 
+function resolveLocalPluginPath(localPath, subdir) {
+  let resolvedPath = path.resolve(localPath)
+  if (subdir) resolvedPath = path.join(resolvedPath, subdir)
+  return resolvedPath
+}
+
+function toPortableRelativePath(absolutePath) {
+  const relativePath = path.relative(process.cwd(), absolutePath)
+  if (!relativePath) return "."
+  const portablePath = relativePath.split(path.sep).join("/")
+  if (portablePath.startsWith(".") || portablePath.startsWith("/")) return portablePath
+  return `./${portablePath}`
+}
+
+function resolveSymlinkTarget(pluginDir, target) {
+  return path.resolve(path.dirname(pluginDir), target)
+}
+
+function createLocalLockfileEntry(source, resolvedPath, subdir) {
+  return {
+    source,
+    resolved: toPortableRelativePath(resolvedPath),
+    commit: "local",
+    ...(subdir && { subdir }),
+    installedAt: new Date().toISOString(),
+  }
+}
+
 async function cloneWithSubdirAsync({ url, ref, subdir, pluginDir }) {
   const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "quartz-plugin-"))
   try {
@@ -481,16 +509,11 @@ export async function handlePluginInstallUnified({
 
         if (fs.existsSync(pluginDir)) {
           if (local) {
+            const resolvedPath = resolveLocalPluginPath(url, subdir)
             console.log(
               styleText("yellow", `⚠ ${name} directory already exists, updating lockfile`),
             )
-            lockfile.plugins[name] = {
-              source: entry.source,
-              resolved: url,
-              commit: "local",
-              ...(subdir && { subdir }),
-              installedAt: new Date().toISOString(),
-            }
+            lockfile.plugins[name] = createLocalLockfileEntry(entry.source, resolvedPath, subdir)
             installed.push({ name, pluginDir })
             lockfileChanged = true
             continue
@@ -511,8 +534,7 @@ export async function handlePluginInstallUnified({
         }
 
         if (local) {
-          let resolvedPath = path.resolve(url)
-          if (subdir) resolvedPath = path.join(resolvedPath, subdir)
+          const resolvedPath = resolveLocalPluginPath(url, subdir)
           if (!fs.existsSync(resolvedPath)) {
             console.log(styleText("red", `✗ Local path does not exist: ${resolvedPath}`))
             failed++
@@ -520,14 +542,8 @@ export async function handlePluginInstallUnified({
           }
           console.log(styleText("cyan", `→ Linking ${name} from ${resolvedPath}...`))
           fs.mkdirSync(path.dirname(pluginDir), { recursive: true })
-          fs.symlinkSync(resolvedPath, pluginDir, "dir")
-          lockfile.plugins[name] = {
-            source: entry.source,
-            resolved: resolvedPath,
-            commit: "local",
-            ...(subdir && { subdir }),
-            installedAt: new Date().toISOString(),
-          }
+          fs.symlinkSync(path.relative(path.dirname(pluginDir), resolvedPath), pluginDir, "dir")
+          lockfile.plugins[name] = createLocalLockfileEntry(entry.source, resolvedPath, subdir)
           installed.push({ name, pluginDir })
           lockfileChanged = true
           console.log(styleText("green", `✓ Linked ${name} (local)`))
@@ -703,13 +719,14 @@ export async function handlePluginInstallUnified({
 
       if (entry.commit === "local") {
         try {
-          if (!fs.existsSync(entry.resolved)) {
-            console.log(styleText("red", `  ✗ ${name}: local path missing: ${entry.resolved}`))
+          const resolvedPath = resolveLocalPluginPath(entry.resolved)
+          if (!fs.existsSync(resolvedPath)) {
+            console.log(styleText("red", `  ✗ ${name}: local path missing: ${resolvedPath}`))
             failed++
             continue
           }
           fs.mkdirSync(path.dirname(pluginDir), { recursive: true })
-          fs.symlinkSync(entry.resolved, pluginDir, "dir")
+          fs.symlinkSync(path.relative(path.dirname(pluginDir), resolvedPath), pluginDir, "dir")
           console.log(styleText("green", `✓ ${name} restored (local symlink)`))
           restoredPlugins.push({ name, pluginDir })
           installed++
@@ -928,9 +945,13 @@ export async function handlePluginInstallUnified({
 
     if (entry.commit === "local") {
       try {
+        const resolvedPath = resolveLocalPluginPath(entry.resolved)
         if (fs.existsSync(pluginDir)) {
           const stat = fs.lstatSync(pluginDir)
-          if (stat.isSymbolicLink() && fs.readlinkSync(pluginDir) === entry.resolved) {
+          if (
+            stat.isSymbolicLink() &&
+            resolveSymlinkTarget(pluginDir, fs.readlinkSync(pluginDir)) === resolvedPath
+          ) {
             console.log(styleText("gray", `  ✓ ${name} (local) already linked`))
             installed++
             continue
@@ -938,13 +959,13 @@ export async function handlePluginInstallUnified({
           if (stat.isSymbolicLink()) fs.unlinkSync(pluginDir)
           else fs.rmSync(pluginDir, { recursive: true })
         }
-        if (!fs.existsSync(entry.resolved)) {
-          console.log(styleText("red", `  ✗ ${name}: local path missing: ${entry.resolved}`))
+        if (!fs.existsSync(resolvedPath)) {
+          console.log(styleText("red", `  ✗ ${name}: local path missing: ${resolvedPath}`))
           failed++
           continue
         }
         fs.mkdirSync(path.dirname(pluginDir), { recursive: true })
-        fs.symlinkSync(entry.resolved, pluginDir, "dir")
+        fs.symlinkSync(path.relative(path.dirname(pluginDir), resolvedPath), pluginDir, "dir")
         console.log(styleText("green", `  ✓ ${name} (local) linked`))
         pluginsToBuild.push({ name, pluginDir })
         installed++
@@ -1113,22 +1134,15 @@ export async function handlePluginAdd(
       }
 
       if (local) {
-        let resolvedPath = path.resolve(url)
-        if (subdir) resolvedPath = path.join(resolvedPath, subdir)
+        const resolvedPath = resolveLocalPluginPath(url, subdir)
         if (!fs.existsSync(resolvedPath)) {
           console.log(styleText("red", `✗ Local path does not exist: ${resolvedPath}`))
           continue
         }
         console.log(styleText("cyan", `→ Adding ${name} from local path ${resolvedPath}...`))
         fs.mkdirSync(path.dirname(pluginDir), { recursive: true })
-        fs.symlinkSync(resolvedPath, pluginDir, "dir")
-        lockfile.plugins[name] = {
-          source,
-          resolved: resolvedPath,
-          commit: "local",
-          ...(subdir && { subdir }),
-          installedAt: new Date().toISOString(),
-        }
+        fs.symlinkSync(path.relative(path.dirname(pluginDir), resolvedPath), pluginDir, "dir")
+        lockfile.plugins[name] = createLocalLockfileEntry(source, resolvedPath, subdir)
         addedPlugins.push({ name, pluginDir, source, configSource })
         console.log(styleText("green", `✓ Added ${name} (local symlink)`))
       } else {

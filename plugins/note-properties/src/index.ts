@@ -1,7 +1,7 @@
-import { NoteProperties } from "./transformer"
+import { NoteProperties } from "./transformer.ts"
 
 export { NoteProperties }
-export { default as NotePropertiesComponent } from "./component"
-export type { NotePropertiesOptions } from "./transformer"
-export type { NotePropertiesComponentOptions } from "./component"
+export { default as NotePropertiesComponent } from "./component.ts"
+export type { NotePropertiesOptions } from "./transformer.ts"
+export type { NotePropertiesComponentOptions } from "./component.ts"
 export default NoteProperties

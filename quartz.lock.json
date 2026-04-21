@@ -141,7 +141,7 @@
     },
     "graph": {
       "source": "./plugins/graph",
-      "resolved": "C:\\Users\\CharaDreemurr\\Desktop\\FH\\quartz-site\\plugins\\graph",
+      "resolved": "./plugins/graph",
       "commit": "local",
       "installedAt": "2026-04-21T00:00:00.000Z"
     },

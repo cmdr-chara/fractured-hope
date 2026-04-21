@@ -1,3 +1,3 @@
-export { NoteProperties, NotePropertiesComponent } from "./src/index"
-export type { NotePropertiesOptions, NotePropertiesComponentOptions } from "./src/index"
-export { default } from "./src/index"
+export { NoteProperties, NotePropertiesComponent } from "./src/index.ts"
+export type { NotePropertiesOptions, NotePropertiesComponentOptions } from "./src/index.ts"
+export { default } from "./src/index.ts"
