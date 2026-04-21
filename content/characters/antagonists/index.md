@@ -11,4 +11,5 @@ aliases: [Antagonist Characters]
 
 - [[Kager]]
 - [[HChara]]
+- [[Crystalline Chara]]
 - [[Elias the Administrator]]

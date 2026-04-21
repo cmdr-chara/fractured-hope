@@ -57,6 +57,7 @@ She does not respond to grief by becoming passive. She builds, fights, searches,
 - **[[characters/axel|Axel]]** — the technician who performs the fusion and one of the story's most unstable trust points
 - **[[characters/kager|Kager]]** — the story's primary antagonist and one of the figures most tightly tied to Raiden's destruction
 - **[[characters/hchara|HChara]]** — an alternate Chara from Timeline 284 whose existence turns Chara's worst possible future into a direct confrontation
+- **[[characters/crystalline-chara|Crystalline Chara]]** — the Timeline 847 perfect-world version of Chara, used by Kager as proof that victory can become possession
 - **[[characters/sans|Sans]]** — part of the violence done to her in the past and part of the care that surrounds her in the present
 - **[[characters/asriel|Asriel]]** — her imprisoned brother, whose thread remains only partially opened
 
@@ -80,11 +81,11 @@ She spares [[characters/javier|Javier]] at the concert, builds her own house, an
 
 ### Arc 5
 
-Chara fights HChara, an alternate self shaped by a dead timeline and Kager's worldview. She does not kill her. Kager kills Frisk and Javier as part of his campaign to wound the people around Chara directly.
+Chara fights HChara, an alternate self shaped by a dead timeline and Kager's worldview. She also sees Crystalline Chara from Timeline 847, the perfect-world version who keeps Raiden alive but hollow. Chara does not kill HChara. Kager kills Frisk and Javier as part of his campaign to wound the people around Chara directly.
 
 ### Arc 6
 
-In the closing battle, Chara fights through a ruined city block against the assault cell that includes [[characters/marcus|Marcus]], [[characters/martinez|Martinez]], and [[characters/ale|Ale]]. She survives the confrontation with Elias and binds him with a HATE and Determination tether, ending the battle in a stalemate rather than a clean victory.
+In the closing battle, Chara fights through a ruined city block against the assault cell that includes [[characters/marcus|Marcus]], [[characters/martinez|Martinez]], and [[characters/supporting/ale|Ale]]. She survives the confrontation with Elias and binds him with a HATE and Determination tether, ending the battle in a stalemate rather than a clean victory.
 
 ## Status
 

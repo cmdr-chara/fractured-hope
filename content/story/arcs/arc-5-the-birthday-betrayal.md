@@ -1,7 +1,7 @@
 ---
 title: "Arc 5: The Birthday Betrayal"
-description: "The fifth arc of Fractured Hope. A surprise party becomes a site of violence. HChara arrives deployed by Kager. Javier is killed. Frisk is killed. Kager makes his worldview explicit. Paloma transforms. Raiden's final message is delivered."
-tags: [story, arc, arc-5, chara, hchara, kager, javier, paloma, frisk, eclipse, birthday]
+description: "The fifth arc of Fractured Hope. A surprise party becomes a site of violence. HChara arrives deployed by Kager. Javier is killed. Frisk is killed. Kager makes his worldview explicit. Paloma transforms. Crystalline Chara appears as the Timeline 847 temptation. Raiden's final message is delivered."
+tags: [story, arc, arc-5, chara, hchara, crystalline-chara, timeline-847, kager, javier, paloma, frisk, eclipse, birthday]
 aliases: ["Arc 5", "The Birthday Betrayal", "story/arc-5-the-birthday-betrayal"]
 ---
 
@@ -74,6 +74,8 @@ Raiden's final message is delivered in this arc — through the recovered resear
 
 This is the moral center of the manuscript, stated directly. Chara hears it in the middle of everything Kager is destroying and refuses the perfect path.
 
+The crystalline-prison vision also presents [[characters/crystalline-chara|Crystalline Chara]] from Timeline 847. This is the perfect-world version Kager uses as proof that Chara can succeed. Raiden survives in that branch, but hollow and frozen, which makes the temptation precise: Chara can keep him beside her only by accepting a world where love has become possession.
+
 The same arc deepens the question of Kager's history with Raiden. [[characters/axel|Axel]] had described them as _"brothers in everything but blood."_ Raiden had nightmares in which he screamed Kager's name. What that connection means in concrete terms remains unresolved.
 
 ## Lore Revelations
@@ -81,12 +83,14 @@ The same arc deepens the question of Kager's history with Raiden. [[characters/a
 - **Bond-powered transformation mechanics** are explicitly confirmed here. Years spent, force produced, bonds as literal fuel.
 - **Frisk's soul resonance form** is established: ghostly partial presence, unable to freely touch physical objects, two-day regeneration window before returning more fully.
 - **HATE arm recognition** by HChara — confirmed that this is a power signature someone from another timeline has already encountered.
+- **Timeline 847 / Crystalline Chara** is established as Kager's perfect-world temptation, distinct from Timeline 284 and HChara.
 - **Kager's command over deployed weapons** — he will destroy what he no longer needs, including the people he turned into tools.
 
 ## Character Movement
 
 - **Chara** — fights a version of herself shaped by total ruin, refuses to kill her, loses Javier, loses Frisk (temporarily), holds Raiden's final message as the axis she refuses to abandon
 - **HChara** — arrives as a weapon, dies as a discarded tool; the story gives her enough interiority to make the discard land
+- **Crystalline Chara** — appears as the perfect-world version of Chara from Timeline 847, showing what victory looks like under Kager's logic
 - **Javier** — killed deliberately as a demonstration of what mercy costs under Kager's rules
 - **Paloma** — transforms, fights, survives; is spending her lifespan to push back
 - **Frisk** — killed, shifted to resonance form; saves Javier's soul and Lumina before the end
@@ -112,6 +116,7 @@ The final message from Raiden runs against Kager's entire architecture: choose f
 
 - [[characters/chara|Chara]]
 - [[characters/hchara|HChara]]
+- [[characters/crystalline-chara|Crystalline Chara]]
 - [[characters/kager|Kager]]
 - [[characters/javier|Javier]]
 - [[characters/paloma|Paloma]]

@@ -79,6 +79,8 @@ After Javier's death, Kager kills HChara as well, severing her head and shatteri
 
 Arc 5.4 makes Kager's worldview explicit. He believes love is a flaw unless it can be weaponized. He treats connection as weakness to be catalogued and used. This is also the arc in which Paloma's bond-powered transformation is confirmed in full: her power scales with emotional bonds, and every time she uses it she is trading years of her life for raw force. Her transformation in this sequence is driven by grief over Javier.
 
+The same chapter presents [[Crystalline Chara]], the Timeline 847 perfect-world version of Chara. Raiden survives there, but frozen and hollow, so the branch is not a clean rescue. It is Kager's proof that victory can preserve the person Chara loves only by turning love into possession.
+
 The same scene deepens the question of Kager's history with Raiden. Axel had described them as _"brothers in everything but blood."_ Raiden had nightmares in which he screamed Kager's name.
 
 Frisk is killed by Kager in order to weaken Chara. She does not disappear: she regenerates as a ghostly soul resonance form, unable to touch physical objects but able to be felt. Raiden's final message — delivered through the recovered research — clarifies the moral center of the manuscript: _"choose pain, choose failure, choose people."_ Chara refuses the perfect path.
@@ -128,4 +130,4 @@ She also found Raiden's book — the research that would eventually become the s
 - Full Lumina fragment recovery — whether the mechanism works or succeeds is still unresolved.
 - Chara's age readout conflict in the manuscript source material.
 
-See [[Source Map]] for current coverage and [[Open Questions]] for the full working list.
+See [[Source Map]] for current coverage and [[meta/open-questions|Open Questions]] for the full working list.
