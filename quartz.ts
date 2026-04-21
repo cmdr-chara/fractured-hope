@@ -1,12 +1,13 @@
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
 import * as Component from "./quartz/components"
 import * as Plugin from "./.quartz/plugins"
+import { Graph as GraphComponent } from "./plugins/graph"
 
 const config = await loadQuartzConfig()
 export default config
 
 const graph = Component.DesktopOnly(
-  Plugin.Graph({
+  GraphComponent({
     localGraph: {
       showTags: false,
       depth: -1,
