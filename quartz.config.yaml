@@ -7,7 +7,7 @@ configuration:
   analytics: null
   defaultDateType: modified
   locale: en-US
-  baseUrl: fractured-hope.local
+  baseUrl: cmdr-chara.github.io/fractured-hope
   ignorePatterns:
     - private
     - templates
