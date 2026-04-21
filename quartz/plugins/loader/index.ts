@@ -95,9 +95,32 @@ function detectPluginType(
   return null
 }
 
+type ProcessingCategory = "transformer" | "filter" | "emitter" | "pageType"
+
+function matchesCategory(factory: Function, expected: ProcessingCategory): boolean {
+  try {
+    const instance = factory()
+    if (!instance || typeof instance !== "object") return false
+    switch (expected) {
+      case "pageType":
+        return "match" in instance && "body" in instance && "layout" in instance
+      case "emitter":
+        return "emit" in instance
+      case "filter":
+        return "shouldPublish" in instance
+      case "transformer":
+        return (
+          "textTransform" in instance || "markdownPlugins" in instance || "htmlPlugins" in instance
+        )
+    }
+  } catch {
+    return false
+  }
+}
+
 function extractPluginFactory(
   module: unknown,
-  type: "transformer" | "filter" | "emitter" | "pageType",
+  type: ProcessingCategory,
 ):
   | QuartzTransformerPlugin
   | QuartzFilterPlugin
@@ -116,6 +139,16 @@ function extractPluginFactory(
       | QuartzFilterPlugin
       | QuartzEmitterPlugin
       | QuartzPageTypePlugin
+  }
+
+  for (const value of Object.values(mod)) {
+    if (typeof value === "function" && matchesCategory(value as Function, type)) {
+      return value as
+        | QuartzTransformerPlugin
+        | QuartzFilterPlugin
+        | QuartzEmitterPlugin
+        | QuartzPageTypePlugin
+    }
   }
 
   return null

@@ -1,0 +1,36 @@
+{
+  "name": "@quartz-community/note-properties",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "main": "./index.ts",
+  "scripts": {
+    "build": "node -e \"process.exit(0)\""
+  },
+  "quartz": {
+    "name": "note-properties",
+    "displayName": "Note Properties",
+    "category": [
+      "transformer"
+    ],
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 5,
+    "defaultEnabled": true,
+    "defaultOptions": {
+      "includeAll": false,
+      "includedProperties": [
+        "description",
+        "tags",
+        "aliases"
+      ],
+      "excludedProperties": [],
+      "hidePropertiesView": false,
+      "delimiters": "---",
+      "language": "yaml"
+    }
+  }
+}

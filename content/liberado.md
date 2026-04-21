@@ -2,7 +2,6 @@
 title: Liberado
 description: "Liberado is the resistance organization founded by Chara and Raiden in Brasilia. It functions as Chara's base of operations and one of the story's main centers of care, research, and war-time survival."
 tags: [organization, liberado, resistance, brasilia]
-aliases: [Liberado]
 ---
 
 # Liberado

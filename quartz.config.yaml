@@ -239,7 +239,7 @@ plugins:
     enabled: false
     options: {}
     order: 50
-  - source: github:quartz-community/note-properties
+  - source: ./plugins/note-properties
     enabled: true
     options:
       includeAll: false
@@ -252,10 +252,6 @@ plugins:
       delimiters: ---
       language: yaml
     order: 5
-    layout:
-      position: beforeBody
-      priority: 15
-      display: all
   - source: github:quartz-community/encrypted-pages
     enabled: false
     options:
