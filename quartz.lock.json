@@ -91,6 +91,12 @@
       "commit": "8c2b196c2b3bf8255fdb493b4e7e05f31bd9b476",
       "installedAt": "2026-04-17T00:45:15.604Z"
     },
+    "dead-links": {
+      "source": "./plugins/dead-links",
+      "resolved": "./plugins/dead-links",
+      "commit": "local",
+      "installedAt": "2026-04-22T00:00:00.000Z"
+    },
     "description": {
       "source": "github:quartz-community/description",
       "resolved": "https://github.com/quartz-community/description.git",

@@ -1,0 +1,28 @@
+{
+  "name": "@quartz-community/dead-links",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "main": "./index.ts",
+  "scripts": {
+    "build": "node -e \"process.exit(0)\""
+  },
+  "quartz": {
+    "name": "dead-links",
+    "displayName": "Dead Links",
+    "description": "Build-time checker for broken wiki links and local markdown links.",
+    "version": "1.0.0",
+    "category": "emitter",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 999,
+    "defaultEnabled": true,
+    "defaultOptions": {
+      "failOnBrokenLinks": true,
+      "checkExternalLinks": false,
+      "externalTimeoutMs": 5000
+    }
+  }
+}

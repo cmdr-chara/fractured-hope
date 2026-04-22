@@ -106,6 +106,13 @@ plugins:
     options:
       enableSiteMap: true
       enableRSS: true
+  - source: ./plugins/dead-links
+    enabled: true
+    options:
+      failOnBrokenLinks: true
+      checkExternalLinks: false
+      externalTimeoutMs: 5000
+    order: 995
   - source: github:quartz-community/favicon
     enabled: true
   - source: github:quartz-community/og-image
