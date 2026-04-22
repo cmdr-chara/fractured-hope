@@ -1,6 +1,7 @@
 import remarkParse from "remark-parse"
 import { unified } from "unified"
 import { parse as parseYaml } from "yaml"
+import { SKIP, visit } from "unist-util-visit"
 
 type BuildCtx = any
 type FilePath = string
@@ -84,8 +85,100 @@ function getAliasSlugs(aliases: string[]): FullSlug[] {
   })
 }
 
-const WIKILINK_PATTERN = /\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g
+const WIKILINK_PATTERN = /(!?)\[\[([^\]]+?)\]\]/g
 const MDLINK_PATTERN = /\[(?:[^\]]*)\]\(([^)]+)\)/g
+
+function parseWikilink(raw: string): { target: string; alias?: string; anchor?: string } | null {
+  const trimmed = raw.trim()
+  if (!trimmed) return null
+
+  const [targetWithAnchor, aliasPart] = trimmed.split("|", 2)
+  const [targetPart, anchorPart] = targetWithAnchor.split("#", 2)
+
+  const target = targetPart.trim()
+  if (!target) return null
+
+  const alias = aliasPart?.trim()
+  const anchor = anchorPart?.trim()
+
+  return {
+    target,
+    alias: alias && alias.length > 0 ? alias : undefined,
+    anchor: anchor && anchor.length > 0 ? anchor : undefined,
+  }
+}
+
+function textToWikiNodes(
+  text: string,
+): Array<
+  | { type: "text"; value: string }
+  | { type: "link"; url: string; children: Array<{ type: "text"; value: string }> }
+> {
+  const nodes: Array<
+    | { type: "text"; value: string }
+    | { type: "link"; url: string; children: Array<{ type: "text"; value: string }> }
+  > = []
+  let lastIndex = 0
+  WIKILINK_PATTERN.lastIndex = 0
+
+  let match: RegExpExecArray | null
+  while ((match = WIKILINK_PATTERN.exec(text)) !== null) {
+    const [fullMatch, bang, raw] = match
+    const matchStart = match.index
+    const matchEnd = match.index + fullMatch.length
+
+    if (matchStart > lastIndex) {
+      nodes.push({ type: "text", value: text.slice(lastIndex, matchStart) })
+    }
+
+    // Leave embeds to the upstream Obsidian plugin so images/transclusions keep working.
+    if (bang === "!") {
+      nodes.push({ type: "text", value: fullMatch })
+      lastIndex = matchEnd
+      continue
+    }
+
+    const parsed = parseWikilink(raw)
+    if (!parsed) {
+      nodes.push({ type: "text", value: fullMatch })
+    } else {
+      const label = parsed.alias ?? parsed.target
+      const url = parsed.anchor ? `${parsed.target}#${parsed.anchor}` : parsed.target
+      nodes.push({
+        type: "link",
+        url,
+        children: [{ type: "text", value: label }],
+      })
+    }
+
+    lastIndex = matchEnd
+  }
+
+  if (lastIndex < text.length) {
+    nodes.push({ type: "text", value: text.slice(lastIndex) })
+  }
+
+  return nodes
+}
+
+function normalizeRawWikiLinks(tree: any) {
+  visit(tree, "text", (node: any, index: number | undefined, parent: any) => {
+    if (parent == null || index == null) return
+    if (typeof node.value !== "string" || !node.value.includes("[[")) return
+
+    const replacement = textToWikiNodes(node.value)
+    if (
+      replacement.length === 1 &&
+      replacement[0]?.type === "text" &&
+      replacement[0].value === node.value
+    ) {
+      return
+    }
+
+    parent.children.splice(index, 1, ...replacement)
+    return SKIP
+  })
+}
 
 function extractLinksFromValue(value: unknown): string[] {
   if (typeof value === "string") {
@@ -269,6 +362,7 @@ export const NoteProperties: QuartzTransformerPlugin<NotePropertiesOptions> = (u
               file.value = extracted.body
               const bodyTree = bodyParser.parse(extracted.body)
               tree.children = bodyTree.children
+              normalizeRawWikiLinks(tree)
             }
           }
         },

@@ -2,14 +2,14 @@ import sourceMapSupport from "source-map-support"
 sourceMapSupport.install(options)
 import path from "path"
 import { PerfTimer } from "./util/perf"
-import { rm } from "fs/promises"
+import { readFile, rm } from "fs/promises"
 import { GlobbyFilterFunction, isGitIgnored } from "globby"
 import { styleText } from "util"
 import { parseMarkdown } from "./processors/parse"
 import { filterContent } from "./processors/filter"
 import { emitContent } from "./processors/emit"
 import cfg from "../quartz"
-import { FilePath, joinSegments, slugifyFilePath } from "./util/path"
+import { FilePath, FullSlug, joinSegments, slugifyFilePath } from "./util/path"
 import { detectSlugCollisions, formatCollisionWarning } from "./util/slugCollisions"
 import chokidar from "chokidar"
 import { ProcessedContent } from "./plugins/vfile"
@@ -22,6 +22,7 @@ import { getStaticResourcesFromPlugins } from "./plugins"
 import { randomIdNonSecure } from "./util/random"
 import { ChangeEvent } from "./plugins/types"
 import { minimatch } from "minimatch"
+import { parse as parseYaml } from "yaml"
 
 function reportSlugCollisions(content: ProcessedContent[]): void {
   const collisions = detectSlugCollisions(content)
@@ -47,6 +48,52 @@ type BuildData = {
   contentMap: ContentMap
   changesSinceLastBuild: Record<FilePath, ChangeEvent["type"]>
   lastBuildMs: number
+}
+
+function extractAliasesFromFrontmatter(source: string): string[] {
+  const lines = source.split(/\r?\n/)
+  if (lines.length === 0 || lines[0]?.trim() !== "---") return []
+
+  let closingIndex = -1
+  for (let i = 1; i < lines.length; i += 1) {
+    if (lines[i]!.trim() === "---") {
+      closingIndex = i
+      break
+    }
+  }
+
+  if (closingIndex === -1) return []
+
+  const frontmatterText = lines.slice(1, closingIndex).join("\n")
+  const parsed = (parseYaml(frontmatterText) as Record<string, unknown> | null) ?? {}
+  const rawAliases = parsed.aliases ?? parsed.alias
+  const values = Array.isArray(rawAliases) ? rawAliases : rawAliases == null ? [] : [rawAliases]
+
+  return values
+    .filter(
+      (value): value is string | number => typeof value === "string" || typeof value === "number",
+    )
+    .map((value) => value.toString().trim())
+    .filter(Boolean)
+}
+
+async function collectAliasSlugs(markdownPaths: FilePath[]): Promise<FullSlug[]> {
+  const aliasSlugs = new Set<FullSlug>()
+
+  for (const fp of markdownPaths) {
+    try {
+      const source = await readFile(fp, "utf8")
+      for (const alias of extractAliasesFromFrontmatter(source)) {
+        const mockPath = alias.endsWith(".md") ? alias : `${alias}.md`
+        aliasSlugs.add(slugifyFilePath(mockPath as FilePath))
+      }
+    } catch {
+      // Ignore files that cannot be read during the pre-scan. They will still
+      // be handled by the main markdown parser if present.
+    }
+  }
+
+  return [...aliasSlugs]
 }
 
 async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
@@ -88,7 +135,10 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
 
   const filePaths = markdownPaths.map((fp) => joinSegments(argv.directory, fp) as FilePath)
   ctx.allFiles = allFiles
-  ctx.allSlugs = allFiles.map((fp) => slugifyFilePath(fp as FilePath))
+  const aliasSlugs = await collectAliasSlugs(filePaths)
+  ctx.allSlugs = [
+    ...new Set([...allFiles.map((fp) => slugifyFilePath(fp as FilePath)), ...aliasSlugs]),
+  ] as FullSlug[]
 
   const parsedFiles = await parseMarkdown(ctx, filePaths)
   reportSlugCollisions(parsedFiles)
