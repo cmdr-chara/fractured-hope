@@ -1,13 +1,13 @@
 ---
 title: Chara
-description: "Chara Dreemurr is the central character of Fractured Hope: commander of Liberado, former Subject C-1, and the Determination soul who forces herself through irreversible soul fusion after Raiden's loss."
+description: "Chara Chinder is the central character of Fractured Hope: commander of Liberado, former Subject C-1, and the Determination soul who forces herself through irreversible soul fusion after Raiden's loss."
 tags: [character, protagonist, liberado, Determination, soul-fusion]
-aliases: [Chara Dreemurr, Subject C-1, C-1, "characters/chara"]
+aliases: [Chara Chinder, Subject C-1, C-1, "characters/chara"]
 ---
 
 # Chara
 
-Chara Dreemurr is the central character of _Fractured Hope_. At the story's opening she is 25, commands [[Liberado]], and has just lost [[characters/raiden|Raiden]] — her boyfriend and research partner — to a deliberate [[lore/lumina|Lumina]] fragmentation attack.
+Chara Chinder is the central character of _Fractured Hope_. At the story's opening she is 25, commands [[Liberado]], and has just lost [[characters/raiden|Raiden]] — her boyfriend and research partner — to a deliberate [[lore/lumina|Lumina]] fragmentation attack.
 
 She is a [[lore/determination|Determination]] soul who later forces herself through an irreversible fusion of seven additional soul traits. That decision gives her extraordinary power, but it also severs her reset anchor and turns memory itself into part of the price.
 
@@ -59,7 +59,7 @@ She does not respond to grief by becoming passive. She builds, fights, searches,
 - **[[characters/hchara|HChara]]** — an alternate Chara from Timeline 284 whose existence turns Chara's worst possible future into a direct confrontation
 - **[[characters/crystalline-chara|Crystalline Chara]]** — the Timeline 847 perfect-world version of Chara, used by Kager as proof that victory can become possession
 - **[[characters/sans|Sans]]** — part of the violence done to her in the past and part of the care that surrounds her in the present
-- **[[characters/asriel|Asriel]]** — her imprisoned brother, whose thread remains only partially opened
+- **[[characters/asriel|Asriel]]** — the imprisoned Dreemurr whose thread remains only partially opened
 
 ## Story
 

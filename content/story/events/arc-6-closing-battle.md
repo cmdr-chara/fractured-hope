@@ -22,7 +22,7 @@ The battle first sharpens around the assault trio:
 
 - [[characters/marcus|Marcus]]
 - [[characters/martinez|Martinez]]
-- [[characters/ale|Ale]]
+- [[characters/supporting/ale|Ale]]
 
 The manuscript confirms that these are not anonymous fighters. They operate as a disciplined militant unit through sewers, basements, rooftops, and ruined street-level corridors. The terrain is tactical, not incidental.
 
@@ -57,6 +57,8 @@ His threat profile is systemic rather than intimate:
 - frequency jamming
 - static-entropy disruption
 - ontological erasure framing
+
+Here the story's demon language shifts from insult to political diagnosis. The enemy is a ruling machinery with desks, uniforms, broadcasts, and spotless hands: a class able to make slaughter sound procedural. Brasilia's resistance is fighting that structure as much as any single combatant.
 
 His own line states the role clearly:
 
@@ -99,7 +101,7 @@ It also keeps the manuscript honest. A story that has spent this long on damage,
 - [[characters/elias-the-administrator|Elias / The Administrator]]
 - [[characters/marcus|Marcus]]
 - [[characters/martinez|Martinez]]
-- [[characters/ale|Ale]]
+- [[characters/supporting/ale|Ale]]
 - [[locations/city-underbelly|City Underbelly]]
 - [[lore/soul-tether|Soul Tether]]
 - [[lore/frequency-jamming|Frequency Jamming]]

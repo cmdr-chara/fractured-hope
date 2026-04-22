@@ -71,6 +71,8 @@ The line **"Let his failure be your burden. And let his body be my message"** ap
 
 [[characters/elias-the-administrator|Elias / the Administrator]] presents a different kind of opposition than [[characters/kager|Kager]]: system logic, frequency disruption, and ontological erasure threats rather than personal ideology.
 
+The arc reframes "demons" as political machinery: desks, uniforms, broadcasts, spotless hands, and enough authority to make mass death sound procedural.
+
 He introduces himself with the line:
 
 > _"I am the Administrator, Elias... and you are a variable that has overstayed its welcome."_

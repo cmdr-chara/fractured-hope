@@ -1,6 +1,6 @@
 ---
 title: Fractured Hope
-description: A wiki for Fractured Hope, a dark multiversal war-tragedy following Chara Dreemurr through soul fusion, identity collapse, and the question of whether grief has a floor.
+description: A wiki for Fractured Hope, a dark multiversal war-tragedy following Chara Chinder through soul fusion, identity collapse, and the question of whether grief has a floor.
 tags: [index, navigation, meta]
 aliases: [home, Home, start here, Fractured Hope Wiki]
 ---
@@ -10,7 +10,7 @@ aliases: [home, Home, start here, Fractured Hope Wiki]
 _Brasilia, nine years into a war nobody won._
 
 <section class="home-brief" aria-label="Story brief">
-  <p><strong>Fractured Hope</strong> is a dark multiversal war-tragedy about Chara Dreemurr, Liberado, soul fusion, Lumina damage, and the cost of refusing a perfect world built on control.</p>
+  <p><strong>Fractured Hope</strong> is a dark multiversal war-tragedy about Chara Chinder, Liberado, soul fusion, Lumina damage, and the cost of refusing a perfect world built on control.</p>
   <dl>
     <div>
       <dt>Scope</dt>
