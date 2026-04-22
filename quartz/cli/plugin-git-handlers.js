@@ -73,6 +73,14 @@ async function cloneWithSubdirAsync({ url, ref, subdir, pluginDir }) {
   }
 }
 
+async function clonePinnedCommitAsync({ url, commit, pluginDir }) {
+  fs.mkdirSync(pluginDir, { recursive: true })
+  await execAsync("git init", { cwd: pluginDir })
+  await execAsync(`git remote add origin "${url}"`, { cwd: pluginDir })
+  await execAsync(`git fetch --depth 1 origin ${commit}`, { cwd: pluginDir })
+  await execAsync(`git checkout --detach ${commit}`, { cwd: pluginDir })
+}
+
 async function buildPluginAsync(pluginDir, name) {
   try {
     const skipBuild = !needsBuild(pluginDir)
@@ -663,11 +671,13 @@ export async function handlePluginInstallUnified({
         console.log(
           styleText("yellow", `⚠ Resolved ${installed.length} plugin(s), ${failed} failed`),
         )
+        throw new Error(`Failed to resolve ${failed} plugin(s).`)
       }
       console.log(styleText("gray", "Updated quartz.lock.json"))
     } else if (failed > 0) {
       console.log()
       console.log(styleText("yellow", `⚠ Resolved ${installed.length} plugin(s), ${failed} failed`))
+      throw new Error(`Failed to resolve ${failed} plugin(s).`)
     }
 
     return
@@ -766,9 +776,11 @@ export async function handlePluginInstallUnified({
                 `→ ${name}: cloning ${entry.resolved}@${entry.commit.slice(0, 7)}...`,
               ),
             )
-            const branchArg = entry.ref ? ` --branch ${entry.ref}` : ""
-            await execAsync(`git clone --depth 1${branchArg} "${entry.resolved}" "${pluginDir}"`)
-            await execAsync(`git checkout ${entry.commit}`, { cwd: pluginDir })
+            await clonePinnedCommitAsync({
+              url: entry.resolved,
+              commit: entry.commit,
+              pluginDir,
+            })
           }
           console.log(styleText("green", `✓ ${name} restored`))
           restoredPlugins.push({ name, pluginDir })
@@ -807,6 +819,7 @@ export async function handlePluginInstallUnified({
       console.log(styleText("green", `✓ Restored ${installed} plugin(s)`))
     } else {
       console.log(styleText("yellow", `⚠ Restored ${installed} plugin(s), ${failed} failed`))
+      throw new Error(`Failed to restore ${failed} plugin(s).`)
     }
     return
   }
@@ -1015,8 +1028,7 @@ export async function handlePluginInstallUnified({
       try {
         if (action === "update") {
           console.log(styleText("cyan", `  → ${name}: updating to ${entry.commit.slice(0, 7)}...`))
-          const fetchRef = entry.ref ? ` ${entry.ref}` : ""
-          await execAsync(`git fetch --depth 1 origin${fetchRef}`, { cwd: pluginDir })
+          await execAsync(`git fetch --depth 1 origin ${entry.commit}`, { cwd: pluginDir })
           await execAsync(`git reset --hard ${entry.commit}`, { cwd: pluginDir })
           pluginsToBuild.push({ name, pluginDir })
           installed++
@@ -1032,12 +1044,11 @@ export async function handlePluginInstallUnified({
             })
           } else {
             console.log(styleText("cyan", `  → ${name}: cloning...`))
-            const branchArg = entry.ref ? ` --branch ${entry.ref}` : ""
-            await execAsync(`git clone --depth 1${branchArg} "${entry.resolved}" "${pluginDir}"`)
-            if (entry.commit !== "unknown") {
-              await execAsync(`git fetch --depth 1 origin ${entry.commit}`, { cwd: pluginDir })
-              await execAsync(`git checkout ${entry.commit}`, { cwd: pluginDir })
-            }
+            await clonePinnedCommitAsync({
+              url: entry.resolved,
+              commit: entry.commit,
+              pluginDir,
+            })
           }
           console.log(styleText("green", `  ✓ ${name}@${entry.commit.slice(0, 7)}`))
           pluginsToBuild.push({ name, pluginDir })
@@ -1076,6 +1087,7 @@ export async function handlePluginInstallUnified({
     console.log(styleText("green", `✓ Installed ${installed} plugin(s)`))
   } else {
     console.log(styleText("yellow", `⚠ Installed ${installed} plugin(s), ${failed} failed`))
+    throw new Error(`Failed to install ${failed} plugin(s).`)
   }
 }
 

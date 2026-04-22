@@ -39,7 +39,7 @@ jobs:
       - run: npm ci
 
       - name: Install Quartz plugins
-        run: npx quartz plugin install --clean
+        run: npx quartz plugin install --clean --concurrency 4
 
       - name: Check types and style
         run: npm run check
