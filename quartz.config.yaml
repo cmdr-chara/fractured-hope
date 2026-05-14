@@ -160,8 +160,10 @@ plugins:
       group: toolbar
       groupOptions:
         grow: true
-  - source: github:quartz-community/backlinks
+  - source: ./plugins/story-backlinks
     enabled: true
+    options:
+      hideWhenEmpty: false
     layout:
       position: right
       priority: 10

@@ -246,6 +246,12 @@
       "commit": "f013389f71ca615e0b37984971e358a54f1625f7",
       "installedAt": "2026-04-27T19:44:28.931Z"
     },
+    "story-backlinks": {
+      "source": "./plugins/story-backlinks",
+      "resolved": "./plugins/story-backlinks",
+      "commit": "local",
+      "installedAt": "2026-05-14T16:00:00.000Z"
+    },
     "stacked-pages": {
       "source": "github:quartz-community/stacked-pages",
       "resolved": "https://github.com/quartz-community/stacked-pages.git",

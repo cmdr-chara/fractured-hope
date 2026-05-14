@@ -1,0 +1,35 @@
+{
+  "name": "@fractured-hope/story-backlinks",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./components": "./components/index.js",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@quartz-community/utils": "github:quartz-community/utils",
+    "preact": "^10.0.0"
+  },
+  "quartz": {
+    "name": "story-backlinks",
+    "displayName": "Story Backlinks",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": true,
+    "defaultOptions": {
+      "hideWhenEmpty": false
+    },
+    "components": {
+      "StoryBacklinks": {
+        "name": "StoryBacklinks",
+        "displayName": "Story Backlinks",
+        "description": "Alias-aware backlinks for the Fractured Hope wiki.",
+        "version": "1.0.0"
+      }
+    }
+  }
+}
