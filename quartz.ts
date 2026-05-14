@@ -2,6 +2,7 @@ import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/conf
 import * as Component from "./quartz/components"
 import * as Plugin from "./.quartz/plugins"
 import { Graph as GraphComponent } from "./plugins/graph"
+import StoryBacklinks from "./quartz/components/StoryBacklinks"
 
 const config = await loadQuartzConfig()
 export default config
@@ -20,7 +21,7 @@ const graph = Component.DesktopOnly(
     },
   }),
 )
-const backlinks = Component.DesktopOnly(Plugin.Backlinks({ hideWhenEmpty: false }))
+const backlinks = Component.DesktopOnly(StoryBacklinks({ hideWhenEmpty: false }))
 
 export const layout = await loadQuartzLayout({
   defaults: {
