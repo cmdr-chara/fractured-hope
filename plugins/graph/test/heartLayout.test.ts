@@ -27,7 +27,7 @@ describe("heart layout helpers", () => {
     const targets = createHeartLayoutTargets(nodes, links, 220)
 
     expect(targets.size).toBe(nodes.length)
-    expect(targets.get("hub")?.band).toBe("core")
+    expect(targets.get("hub")?.band).toBe("mid")
     expect(targets.get("solo-a")?.band).toBe("outer")
     expect(targets.get("solo-b")?.band).toBe("outer")
 

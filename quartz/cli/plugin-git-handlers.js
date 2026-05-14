@@ -82,6 +82,12 @@ async function clonePinnedCommitAsync({ url, commit, pluginDir }) {
 }
 
 async function buildPluginAsync(pluginDir, name) {
+  if (hasPrebuiltDist(pluginDir)) {
+    console.log(styleText("green", `  ✓ ${name}: using pre-built dist/`))
+    linkPeerPlugins(pluginDir)
+    return true
+  }
+
   try {
     const skipBuild = !needsBuild(pluginDir)
     console.log(styleText("cyan", `  → ${name}: installing dependencies...`))
@@ -138,6 +144,11 @@ function isDistGitignored(pluginDir) {
   })
 }
 
+function hasPrebuiltDist(pluginDir) {
+  const distDir = path.join(pluginDir, "dist")
+  return fs.existsSync(distDir) && !isDistGitignored(pluginDir)
+}
+
 function needsBuild(pluginDir) {
   if (isDistGitignored(pluginDir)) return true
   const distDir = path.join(pluginDir, "dist")
@@ -152,6 +163,15 @@ function needsBuild(pluginDir) {
  *  2. All other peers → symlink to the host Quartz node_modules so plugins
  *     share a single copy of packages like unified, vfile, rehype-raw, etc.
  */
+function trySymlink(target, linkPath) {
+  try {
+    fs.symlinkSync(target, linkPath, "dir")
+  } catch (err) {
+    if (err.code === "EEXIST") return
+    throw err
+  }
+}
+
 function linkPeerPlugins(pluginDir) {
   const pkgPath = path.join(pluginDir, "package.json")
   if (!fs.existsSync(pkgPath)) return
@@ -159,16 +179,13 @@ function linkPeerPlugins(pluginDir) {
   const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf-8"))
   const peers = pkg.peerDependencies ?? {}
 
-  // Locate the host Quartz node_modules (two levels up from .quartz/plugins/<name>)
   const quartzRoot = path.resolve(pluginDir, "..", "..", "..")
   const hostNodeModules = path.join(quartzRoot, "node_modules")
 
   for (const peerName of Object.keys(peers)) {
-    // Check if this peer is already satisfied (e.g. installed as a regular dep)
     const peerNodeModulesPath = path.join(pluginDir, "node_modules", ...peerName.split("/"))
     if (fs.existsSync(peerNodeModulesPath)) continue
 
-    // Case 1: @quartz-community scoped packages → sibling plugin symlink
     if (peerName.startsWith("@quartz-community/")) {
       const siblingPlugin = findPluginByPackageName(peerName)
       if (!siblingPlugin) continue
@@ -177,15 +194,13 @@ function linkPeerPlugins(pluginDir) {
       fs.mkdirSync(scopeDir, { recursive: true })
 
       const target = path.relative(scopeDir, siblingPlugin)
-      fs.symlinkSync(target, peerNodeModulesPath, "dir")
+      trySymlink(target, peerNodeModulesPath)
       continue
     }
 
-    // Case 2: Other peers → resolve from host Quartz node_modules
     const hostPeerPath = path.join(hostNodeModules, ...peerName.split("/"))
     if (!fs.existsSync(hostPeerPath)) continue
 
-    // Ensure parent directory exists (for scoped packages like @napi-rs/simple-git)
     const parts = peerName.split("/")
     if (parts.length > 1) {
       const scopeDir = path.join(pluginDir, "node_modules", parts[0])
@@ -195,7 +210,7 @@ function linkPeerPlugins(pluginDir) {
     }
 
     const target = path.relative(path.dirname(peerNodeModulesPath), hostPeerPath)
-    fs.symlinkSync(target, peerNodeModulesPath, "dir")
+    trySymlink(target, peerNodeModulesPath)
   }
 }
 
