@@ -86,7 +86,7 @@ See [[story/arc-5-the-birthday-betrayal|Arc 5: The Birthday Betrayal]].
 
 ## Arc 6: The Hollow Morning
 
-- The assault unit — [[characters/marcus|Marcus]], [[characters/martinez|Martinez]], [[characters/ale|Ale]] — moves through Brasilia's [[locations/city-underbelly|city underbelly]].
+- The assault unit — [[characters/marcus|Marcus]], [[characters/martinez|Martinez]], [[characters/supporting/ale|Ale]] — moves through Brasilia's [[locations/city-underbelly|city underbelly]].
 - **Martinez is confirmed killed.** Marcus's fate remains unresolved.
 - [[characters/valerius|Valerius]] fights alongside Chara; his Lunar Aegis and Penumbra abilities are deployed.
 - The confrontation with [[characters/elias-the-administrator|Elias / the Administrator]] is staged in the ruined city terrain.

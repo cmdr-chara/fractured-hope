@@ -17,6 +17,8 @@ The clearest single scene documenting this relationship appears in Arc 4.6, rend
 
 > _"He hugged me. Just like that. Strong arms, yet his movements were strangely gentle — like handling something precious that had been broken too many times."_
 
+The chapter now frames that embrace against Chara's earlier loneliness. Before Raiden, she built a home with an unused second bed and treated the beach as somewhere to watch families from a distance. By the time Raiden reaches her in the memory, she is coming out of the lab, the Library, the SAVE star, and the Judgment Hall aftermath. She raises a knife because violence is the only greeting she still trusts.
+
 A knife drops from Chara's hand during this moment. The manuscript does not editorialize. The image carries the argument.
 
 ## The Locket

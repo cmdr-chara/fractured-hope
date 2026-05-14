@@ -31,6 +31,8 @@ After the Lab C7 escape, she is held as **Subject C-1** in the Grand Library, a 
 
 After captivity, Chara eventually builds [[Liberado]] with Raiden in Brasilia. By the present-day story she is both its commander and its emotional center.
 
+The recovered flashback material clarifies the emotional shape of her life before Raiden. She had already built a house, down to its locks, scent, and spare bed, but the space was designed around absence. The empty second bed and her habit of watching families from the beach make Raiden's later first embrace a turning point rather than a simple romantic memory.
+
 ## Appearance
 
 Chara has reddish-brown wavy hair, a red jacket, a brown tank top, and black sneakers. She carries a heart-shaped locket that once held Raiden's picture; after his fragmentation, the locket reflects only her own image.

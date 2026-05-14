@@ -52,6 +52,8 @@ Frisk witnesses, for the first time, how deep this goes — not metaphorically, 
 
 She names [[locations/the-library|the Library]] and [[lore/lab-c7|Lab C7]] directly, and admits she was gathering intelligence rather than helping.
 
+The updated chapter also surfaces the earlier forest confrontation after Chara's Lab C7 escape. Frisk's younger self admits, directly, that they knew about the imprisonment and that Chara was being studied. This makes the apology less abstract: Chara is not only forgiving a later confession, but remembering the moment the betrayal was spoken aloud.
+
 [[characters/chara|Chara]]'s response — _"People change. Systems don't. You're not them anymore"_ — does not erase the harm. It names the distinction between a person and the institution that shaped their choices.
 
 This exchange is one of the most important relationship scenes in the manuscript. It is not a resolution; it is a new foundation to stand on.
@@ -69,6 +71,8 @@ Frisk's crush subplot is confirmed in this chapter, though the specifics are not
 The arc closes on a flashback: [[characters/chara|Chara]] remembers the first time [[characters/raiden|Raiden]] held her. The scene takes place at a beach. The source material, now reviewed and confirmed, describes it as:
 
 > _"He hugged me. Just like that. Strong arms, yet his movements were strangely gentle — like handling something precious that had been broken too many times."_
+
+The flashback now carries a clearer lead-in. Before Raiden, Chara had built a house around absence: an empty second bed, a controlled scent, and a life spent watching other people have families from a distance. The memory then moves through the lab, the Library, the data room, the SAVE star, and the Judgment Hall aftermath before Raiden arrives.
 
 A knife drops from Chara's hand during this moment. She doesn't decide to let go; it falls on its own.
 

@@ -11,6 +11,14 @@ The relationship between [[characters/chara|Chara]] and [[characters/frisk|Frisk
 
 The manuscript does not treat their current closeness as erasure of that history. It treats it as something built on top of it.
 
+## The Forest Confrontation
+
+The recovered flashback material is now partially reflected in Arc 4.4. After Chara escapes Lab C7, Frisk meets her in the forest with a friendly face that quickly becomes a recruitment attempt. Chara asks how long they knew.
+
+Frisk's answer is direct: they knew everything, and the government was studying Chara as well as gathering intelligence.
+
+That scene matters because it gives the present-day apology a concrete wound. Frisk did not merely belong to the system in the abstract. She said the truth to Chara's face when Chara was sixteen, exhausted, and newly escaped.
+
 ## The Apology
 
 During the rain scene, Frisk delivers the following:
@@ -19,7 +27,7 @@ During the rain scene, Frisk delivers the following:
 
 Chara's response: _"People change. Systems don't. You're not them anymore."_
 
-The manuscript does not frame this exchange as closure. It frames it as ground — the thing they are standing on when they choose to continue.
+The manuscript does not frame this exchange as closure. It frames it as ground — the thing they are standing on when they choose to continue. The new flashback beat makes that ground sharper because Chara remembers both Frisk's confession and the younger Frisk who once helped define the cage.
 
 ## The Wasp Knife
 

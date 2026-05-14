@@ -40,7 +40,7 @@ This event is one of the clearest places where _Fractured Hope_ shows how threat
 Arc 4.6 closes the arc with [[characters/raiden|Raiden]]'s first embrace of [[characters/chara|Chara]], also at a beach. Whether it is the exact same physical beach is not confirmed, but the narrative pairing is deliberate.
 
 The birthday outing shows chosen family and warmth in the present.
-The flashback shows the first decisive moment of recognition in the past.
+The flashback shows the first decisive moment of recognition in the past, now framed by Chara's pre-Raiden isolation: the empty second bed in her house, the controlled scent of rain on hot asphalt, and the habit of watching other families from a distance.
 
 Together, they make the beach a repeated site of:
 

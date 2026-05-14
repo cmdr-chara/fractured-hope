@@ -7,7 +7,7 @@ aliases: ["paladin blades", "paladin blade", "assault blades", "equipment/paladi
 
 # Paladin Blades
 
-Paladin blades are the edged weapons used by the Arc 6 assault unit — [[characters/marcus|Marcus]], [[characters/martinez|Martinez]], and [[characters/ale|Ale]]. The source material confirms a key mechanical property: their wounds linger. Contact does not end the damage.
+Paladin blades are the edged weapons used by the Arc 6 assault unit — [[characters/marcus|Marcus]], [[characters/martinez|Martinez]], and [[characters/supporting/ale|Ale]]. The source material confirms a key mechanical property: their wounds linger. Contact does not end the damage.
 
 ## The Lingering Wound Effect
 
@@ -31,7 +31,7 @@ The lingering wound effect is relevant to the Arc 6 battle's attrition dynamics.
 
 - [[characters/marcus|Marcus]]
 - [[characters/martinez|Martinez]]
-- [[characters/ale|Ale]]
+- [[characters/supporting/ale|Ale]]
 - [[characters/chara|Chara]]
 - [[characters/valerius|Valerius]]
 - [[story/arc-6-the-hollow-morning|Arc 6: The Hollow Morning]]

@@ -15,7 +15,7 @@ Marcus exists as part of a disciplined, named opposition rather than anonymous b
 
 ## Role in the Story
 
-Marcus appears during the closing urban battle sequence in Arc 6 as part of the same assault cell as [[characters/martinez|Martinez]] and [[characters/ale|Ale]]. He is active in the confrontation, and unlike Martinez he is not confirmed dead by the end of the scene.
+Marcus appears during the closing urban battle sequence in Arc 6 as part of the same assault cell as [[characters/martinez|Martinez]] and [[characters/supporting/ale|Ale]]. He is active in the confrontation, and unlike Martinez he is not confirmed dead by the end of the scene.
 
 ## Combat Context
 

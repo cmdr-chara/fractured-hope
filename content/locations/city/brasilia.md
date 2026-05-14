@@ -27,7 +27,7 @@ A public concert in Brasilia is the site of the confrontation with [[characters/
 
 ### Arc 6 — The Closing Battle
 
-By Arc 6, Brasilia's war-damaged districts become kill-box structures. Sewers, basements, rooftops, and ruined city blocks are the staging ground for the confrontation with the assault unit — [[characters/marcus|Marcus]], [[characters/martinez|Martinez]], and [[characters/ale|Ale]] — and the later confrontation with [[characters/elias-the-administrator|Elias / the Administrator]].
+By Arc 6, Brasilia's war-damaged districts become kill-box structures. Sewers, basements, rooftops, and ruined city blocks are the staging ground for the confrontation with the assault unit — [[characters/marcus|Marcus]], [[characters/martinez|Martinez]], and [[characters/supporting/ale|Ale]] — and the later confrontation with [[characters/elias-the-administrator|Elias / the Administrator]].
 
 The source material describes these as deliberate tactical terrain rather than incidental locations.
 

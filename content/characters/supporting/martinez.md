@@ -15,7 +15,7 @@ Martinez's role is narrow but important. Her death makes the Arc 6 fight feel co
 
 ## Role in the Story
 
-Martinez fights alongside [[characters/marcus|Marcus]] and [[characters/ale|Ale]] in the ruined-city assault sequence. The story confirms that she is killed during the confrontation with [[characters/chara|Chara]].
+Martinez fights alongside [[characters/marcus|Marcus]] and [[characters/supporting/ale|Ale]] in the ruined-city assault sequence. The story confirms that she is killed during the confrontation with [[characters/chara|Chara]].
 
 ## Combat Context
 

@@ -64,4 +64,4 @@ Its primary work is register. The manuscript is dark, careful, and specific. The
 - [[lore/lab-c7|Lab C7]]
 - [[lore/lumina|Lumina]]
 - [[lore/determination|Determination]]
-- [[Story Overview]]
+- [[story/overview|Story Overview]]

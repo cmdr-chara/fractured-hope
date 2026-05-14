@@ -11,7 +11,7 @@ The city underbelly refers to the lower infrastructure of war-damaged [[location
 
 ## Function in Arc 6
 
-The Arc 6 assault unit — [[characters/marcus|Marcus]], [[characters/martinez|Martinez]], and [[characters/ale|Ale]] — use this terrain as part of a coordinated tactical approach. The environment is not incidental. The source material describes the ruined city blocks as **kill-box structures**: layouts where lines of sight are controlled, escape routes are funneled, and ambush positions are layered vertically across rooftops, street level, and below.
+The Arc 6 assault unit — [[characters/marcus|Marcus]], [[characters/martinez|Martinez]], and [[characters/supporting/ale|Ale]] — use this terrain as part of a coordinated tactical approach. The environment is not incidental. The source material describes the ruined city blocks as **kill-box structures**: layouts where lines of sight are controlled, escape routes are funneled, and ambush positions are layered vertically across rooftops, street level, and below.
 
 The closing confrontation with [[characters/elias-the-administrator|Elias / the Administrator]] is staged here after the assault unit contact. The stalemate ending — Chara binding Elias with a HATE + Determination tether — takes place inside this terrain.
 
@@ -38,7 +38,7 @@ The torture-lab implications present in the manuscript's assault staging are not
 - [[locations/brasilia|Brasilia]]
 - [[characters/marcus|Marcus]]
 - [[characters/martinez|Martinez]]
-- [[characters/ale|Ale]]
+- [[characters/supporting/ale|Ale]]
 - [[characters/elias-the-administrator|Elias / The Administrator]]
 - [[characters/chara|Chara]]
 - [[lore/soul-tether|Soul Tether]]

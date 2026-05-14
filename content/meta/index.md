@@ -13,7 +13,7 @@ Reference pages about how the wiki works, what sources it uses, and which story 
 
 - [[Canon Policy]]
 - [[Source Map]]
-- [[Open Questions]]
+- [[meta/open-questions|Open Questions]]
 
 ## What this section is for
 

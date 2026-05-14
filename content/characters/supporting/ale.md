@@ -2,7 +2,7 @@
 title: Ale
 description: "Ale is a named member of Arc 6's assault unit. She survives long enough to remain present through the closing battle, but the manuscript still leaves her final fate and fuller identity unresolved."
 tags: [character, antagonist, arc-6, assault-unit, ale]
-aliases: [Ale]
+aliases: [Ale, "characters/ale"]
 ---
 
 # Ale

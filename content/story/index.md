@@ -11,7 +11,7 @@ This section tracks the overall structure of _Fractured Hope_. The arc pages and
 
 ## Hubs
 
-- [[Story Overview]]
+- [[story/overview|Story Overview]]
 - [[story/arcs/index|Story Arcs]]
 - [[story/events/index|Story Events]]
 

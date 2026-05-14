@@ -21,6 +21,8 @@ Frisk matters because the story refuses to simplify her. She is healer, witness,
 
 Frisk is present around the time of Chara's abduction and knows about what is being done to her. After Chara escapes Lab C7, Frisk meets her in the forest and admits she already knew about the imprisonment.
 
+The current Arc 4.4 material makes this admission more explicit. Frisk approaches with apparent kindness, shifts into recruitment, and then confirms that the government knew everything and was studying Chara. That scene is one of the clearest early examples of Frisk's healer role being entangled with institutional control.
+
 She then participates in the transfer to the Grand Library. During that period, she is present for the Judgment Hall sequence, locks the door, and later admits that she observed Chara through a one-way mirror and took notes on her screams.
 
 ### Main-story role

@@ -39,7 +39,7 @@ The pattern is defensive discipline first, then controlled escalation. He reads 
 
 ## Role in Arc 6
 
-Valerius enters during the final urban battle sequence that moves through [[locations/city-underbelly|kill-box terrain]], ruined streets, rooftops, basements, and sewer access routes. In that phase he fights in the same operational space as Chara and against the same militant opposition that includes [[characters/marcus|Marcus]], [[characters/martinez|Martinez]], and [[characters/ale|Ale]].
+Valerius enters during the final urban battle sequence that moves through [[locations/city-underbelly|kill-box terrain]], ruined streets, rooftops, basements, and sewer access routes. In that phase he fights in the same operational space as Chara and against the same militant opposition that includes [[characters/marcus|Marcus]], [[characters/martinez|Martinez]], and [[characters/supporting/ale|Ale]].
 
 He then remains relevant after the assault-unit phase, which is the real marker of his importance. The battle does not discard him once the first wave of enemies is cleared. He carries forward into the confrontation with Elias, where his presence helps establish that the ending is still a coordinated fight rather than a purely solitary last stand.
 

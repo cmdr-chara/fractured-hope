@@ -41,7 +41,7 @@ These preparations are what allow Chara to keep moving after he is gone.
 
 Raiden comes across as careful, compassionate, and deeply future-oriented. He plans for catastrophe, but not from coldness. His defining trait is that he sees Chara as a person instead of a threat to manage.
 
-That quality gives the Arc 4.6 memory its weight. The first embrace matters because it is not about rescuing or controlling her. It is about recognition.
+That quality gives the Arc 4.6 memory its weight. The first embrace matters because it is not about rescuing or controlling her. It is about recognition. The expanded memory now makes the contrast sharper: Chara comes out of isolation, captivity, data-room revelation, and the Judgment Hall aftermath with a knife still raised. Raiden chooses contact instead of containment.
 
 ## Abilities and Expertise
 
