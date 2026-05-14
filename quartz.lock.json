@@ -14,9 +14,9 @@
       "installedAt": "2026-04-27T19:44:27.695Z"
     },
     "backlinks": {
-      "source": "github:quartz-community/backlinks",
-      "resolved": "https://github.com/quartz-community/backlinks.git",
-      "commit": "91fc11d4ff4370be16a9710289f65b467ccb9fd6",
+      "source": "./plugins/backlinks",
+      "resolved": "./plugins/backlinks",
+      "commit": "local",
       "installedAt": "2026-04-27T19:44:27.824Z"
     },
     "bases-page": {

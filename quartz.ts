@@ -20,7 +20,7 @@ const graph = Component.DesktopOnly(
     },
   }),
 )
-const backlinks = Component.DesktopOnly(Plugin.Backlinks())
+const backlinks = Component.DesktopOnly(Plugin.Backlinks({ hideWhenEmpty: false }))
 
 export const layout = await loadQuartzLayout({
   defaults: {

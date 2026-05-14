@@ -259,6 +259,16 @@ h1.page-title a {
     pointer-events: none;
   }
 
+  .backlink-empty {
+    padding: 0.55rem 0.6rem;
+    border: 1px dashed color-mix(in srgb, var(--secondary) 18%, transparent);
+    border-radius: 6px;
+    color: color-mix(in srgb, var(--darkgray) 74%, transparent);
+    font-size: 0.82rem;
+    line-height: 1.35;
+    background: color-mix(in srgb, var(--secondary) 5%, transparent);
+  }
+
   .backlink-title {
     font-size: 0.9rem;
     line-height: 1.2;
